@@ -1,14 +1,27 @@
-import Head from 'next/head';
 import MemeCard from '../components/MemeCard';
-import Navbar from '../components/Navbar';
 
 export default function Home({ memes }) {
   return (
-    <div className="list-group">
-      {memes.map((meme, index) => (
-        <MemeCard key={index} meme={meme} />
-      ))}
-    </div>
+    <>
+      <div className="row">
+        <div className="col-md-8 ">
+          <div className="list-group">
+            {memes.map((meme, index) => (
+              <MemeCard key={index} meme={meme} />
+            ))}
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card card-body">
+            <h3>Card Feautu</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+              temporibus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

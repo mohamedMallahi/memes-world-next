@@ -3,7 +3,7 @@ import ProfileImage from '../components/ProfileImage';
 
 const Meme = ({ meme }) => {
   return (
-    <div className="list-group-item border p-0 my-4">
+    <div className="list-group-item border p-0 mb-4">
       {/* Card Header */}
       <div className="p-4">
         <p className="d-flex align-items-center">
@@ -19,9 +19,11 @@ const Meme = ({ meme }) => {
       <div className="d-flex p-4">
         <div>
           <HeartIcon />
+          108
         </div>
-        <div className="ms-2">
+        <div className="ms-2 d-flex align-items-center ">
           <CommentIcon />
+          43
         </div>
       </div>
     </div>
